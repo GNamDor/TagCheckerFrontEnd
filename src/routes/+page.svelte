@@ -42,14 +42,12 @@
 
 		<input class= "text-field" bind:value={newText} type="text" id="fname" name="fname"><br><br>
 		<input on:click={handlePostTag} type="submit" value="Submit">
-	</div>
-	<div class="bottom-div">
 		{#if hasResults}
 
-			<h1 transition:fade={{ duration: 500 }}>
-				<pre>{results}</pre>
-			</h1>
-		{/if}
+		<h1 transition:fade={{ duration: 500 }}>
+			<pre>{results}</pre>
+		</h1>
+	{/if}
 	</div>
 	
 </section>

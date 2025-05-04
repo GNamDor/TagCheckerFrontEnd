@@ -1,8 +1,0 @@
-  
-  {
-    "name": "worker-name",
-    "compatibility_date": "2025-05-04",
-    "assets": {
-      "directory": "./dist"
-    }
-  }
