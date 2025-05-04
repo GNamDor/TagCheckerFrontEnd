@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import welcomeFallback from '$lib/images/svelte-welcome.png';
-	import { PostTags } from '../lib/api.config.js'; 
 	import { fade } from 'svelte/transition';
+	import { PostTags } from '../lib/api.config.js';
 
 	let newText = '';
 	// let results = [];
@@ -31,7 +31,6 @@
 
 <section class="parent-container">
 
-	<div class="top-div">
 		<h1>
 			Tag Checker<br />
 		</h1>
@@ -41,14 +40,14 @@
 		</h2>
 
 		<input class= "text-field" bind:value={newText} type="text" id="fname" name="fname"><br><br>
+		
 		<input on:click={handlePostTag} type="submit" value="Submit">
+		
 		{#if hasResults}
-
-		<h1 transition:fade={{ duration: 500 }}>
-			<pre>{results}</pre>
-		</h1>
-	{/if}
-	</div>
+			<h1 transition:fade={{ duration: 500 }}>
+				<pre>{results}</pre>
+			</h1>
+		{/if}
 	
 </section>
 
@@ -59,26 +58,15 @@
 		flex-direction: column;
 		justify-content: center; 
 		align-items: center;    */
-		height: 100vh;        
-	}
-
-	.top-div{
-			height: auto;
-			padding-top: 10%;
-
-		}
-
-	.bottom-div{
-		padding-top: 0px;
-	}
-
-	div {
+		height: 100vh;      
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+		flex: 0.6;  
 	}
+
+
 
 	h1 {
 		width: 100%;
