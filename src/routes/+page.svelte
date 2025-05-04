@@ -44,9 +44,9 @@
 		<input on:click={handlePostTag} type="submit" value="Submit">
 		
 		{#if hasResults}
-			<h1 transition:fade={{ duration: 500 }}>
+			<h2 transition:fade={{ duration: 500 }}>
 				<pre>{results}</pre>
-			</h1>
+			</h2>
 		{/if}
 	
 </section>
